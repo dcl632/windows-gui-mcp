@@ -40,7 +40,7 @@ Use credits to improve Codex-assisted development, add Windows GUI automation te
 ## Anything else draft
 
 ```text
-The project is a new public release with CI on Ubuntu and Windows, MIT license, release artifacts, and examples focused on Notepad and Calculator. It targets an underserved area for agents: reliable Windows-only desktop app automation through MCP, with verification-first behavior and safer fallback rules.
+The repository is a new public MIT release with Ubuntu/Windows CI, release artifacts, issue templates, CONTRIBUTING, SECURITY, and Notepad/Calculator examples. It targets an underserved need for agents: reliable Windows-only desktop app automation through MCP with verification-first behavior and safe fallbacks.
 ```
 
 ## Private fields to fill in the form only
@@ -59,5 +59,6 @@ Do not commit these values to the repository:
 - GitHub Actions CI is green.
 - PyPI Trusted Publisher is configured or PyPI API token upload is complete.
 - README includes install, run, examples, and safety rules.
+- CONTRIBUTING, SECURITY, changelog, pull request template, and issue templates exist.
 - Repository contains no private host, account, email, or internal workflow details.
 - PyPI package exists or the release notes clearly state when it will be published.

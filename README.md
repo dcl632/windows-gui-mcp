@@ -179,6 +179,12 @@ python -m build
 twine check dist/*
 ```
 
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development workflow and automation
+design rules. See [SECURITY.md](SECURITY.md) for vulnerability reporting and
+desktop automation safety expectations.
+
 ## License
 
 MIT
