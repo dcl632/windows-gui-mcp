@@ -8,11 +8,20 @@ Official links:
 
 ## Project identity
 
+- First name: `Ding Chao`
+- Last name: `Liao`
 - GitHub username: `dcl632`
 - Repository URL: `https://github.com/dcl632/windows-gui-mcp`
 - Role: primary maintainer / original AI-assisted implementation owner
 - Package name: `windows-gui-mcp`
 - License: MIT
+- Public release: `https://github.com/dcl632/windows-gui-mcp/releases/tag/v0.1.0`
+- CI: GitHub Actions on Ubuntu and Windows
+
+## Form choices
+
+- Describe your role: `Primary maintainer`
+- I'm interested in: `Codex Security` and `API credits for my project`
 
 ## Qualification draft
 
@@ -24,6 +33,12 @@ windows-gui-mcp is an open-source MCP server that helps AI coding agents operate
 
 ```text
 Use credits to improve Codex-assisted development, add Windows GUI automation test scenarios, generate and review documentation, triage issues, and evaluate security/readiness of MCP tool behavior across Notepad, Calculator, native dialogs, and common Windows apps.
+```
+
+## Anything else draft
+
+```text
+The project is a new public release with CI on Ubuntu and Windows, MIT license, release artifacts, and examples focused on Notepad and Calculator. It targets an underserved area for agents: reliable Windows-only desktop app automation through MCP, with verification-first behavior and safer fallback rules.
 ```
 
 ## Private fields to fill in the form only
