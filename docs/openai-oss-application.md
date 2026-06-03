@@ -19,6 +19,8 @@ Official links:
 - CI: GitHub Actions on Ubuntu and Windows
 - PyPI publishing: prepared through GitHub Actions Trusted Publishing workflow
 - PyPI status: pending Trusted Publisher configuration in the PyPI account
+- Security readiness: GitHub private vulnerability reporting, secret scanning,
+  and push protection are enabled
 
 ## Form choices
 
@@ -40,7 +42,7 @@ Use credits to improve Codex-assisted development, add Windows GUI automation te
 ## Anything else draft
 
 ```text
-The repository is a new public MIT release with Ubuntu/Windows CI, release artifacts, issue templates, CONTRIBUTING, SECURITY, and Notepad/Calculator examples. It targets an underserved need for agents: reliable Windows-only desktop app automation through MCP with verification-first behavior and safe fallbacks.
+The repository is a new public MIT release with Ubuntu/Windows CI, release artifacts, issue templates, CONTRIBUTING, SECURITY, private vulnerability reporting, and Notepad/Calculator examples. It targets an underserved need for agents: reliable Windows-only desktop automation through MCP with safe fallbacks.
 ```
 
 ## Private fields to fill in the form only
@@ -60,5 +62,6 @@ Do not commit these values to the repository:
 - PyPI Trusted Publisher is configured or PyPI API token upload is complete.
 - README includes install, run, examples, and safety rules.
 - CONTRIBUTING, SECURITY, changelog, pull request template, and issue templates exist.
+- GitHub private vulnerability reporting, secret scanning, and push protection are enabled.
 - Repository contains no private host, account, email, or internal workflow details.
 - PyPI package exists or the release notes clearly state when it will be published.
