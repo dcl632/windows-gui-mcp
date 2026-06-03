@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "windows-gui-mcp"
+version = "0.1.0"
+description = "Windows GUI Automation MCP server for AI coding agents"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Liao Ding Chao" }]
+dependencies = [
+  "mcp>=1.2.0",
+  "pillow>=10.2.0",
+  "pydantic>=2.6.0",
+  "anyio>=4.3.0",
+  "psutil>=5.9.0",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: User Interfaces",
+]
+
+[project.urls]
+Homepage = "https://github.com/dcl632/windows-gui-mcp"
+Repository = "https://github.com/dcl632/windows-gui-mcp"
+Issues = "https://github.com/dcl632/windows-gui-mcp/issues"
+
+[project.scripts]
+windows-gui-mcp = "windows_gui_mcp.server:main"
+
+[project.optional-dependencies]
+windows = [
+  "pywinauto>=0.6.8 ; sys_platform == 'win32'",
+  "comtypes>=1.4.0 ; sys_platform == 'win32'",
+  "pyautogui>=0.9.54",
+  "winocr>=0.0.14 ; sys_platform == 'win32'",
+]
+ocr = [
+  "pytesseract>=0.3.10",
+  "easyocr>=1.7.1 ; python_version < '3.13'",
+  "opencv-python>=4.9.0",
+]
+dev = [
+  "build>=1.2.0",
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "ruff>=0.4",
+  "twine>=5.0.0",
+]
+all = [
+  "pywinauto>=0.6.8 ; sys_platform == 'win32'",
+  "comtypes>=1.4.0 ; sys_platform == 'win32'",
+  "pyautogui>=0.9.54",
+  "winocr>=0.0.14 ; sys_platform == 'win32'",
+  "pytesseract>=0.3.10",
+  "easyocr>=1.7.1 ; python_version < '3.13'",
+  "opencv-python>=4.9.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/windows_gui_mcp"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"

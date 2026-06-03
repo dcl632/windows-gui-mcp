@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local/editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime artifacts
+.windows_gui_mcp/
+*.log
+*.png
+*.trace.json
+trace_*.json
+replay_*.py
