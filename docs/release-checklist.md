@@ -1,6 +1,15 @@
 # Release checklist
 
-This project is prepared for a `v0.1.0` public release.
+This project has a public `v0.1.0` GitHub release. Use this checklist for
+future release verification and for the remaining PyPI publication step.
+
+## Current public release
+
+- Repository: `https://github.com/dcl632/windows-gui-mcp`
+- Release: `https://github.com/dcl632/windows-gui-mcp/releases/tag/v0.1.0`
+- Package name: `windows-gui-mcp`
+- License: MIT
+- CI: GitHub Actions on Ubuntu and Windows
 
 ## Local verification
 
@@ -18,25 +27,42 @@ windows-gui-mcp --version
 
 ## GitHub release
 
+For a future release, build from a clean working tree and create a new tag:
+
 ```bash
 git add .
-git commit -m "Prepare windows-gui-mcp for public release"
-gh repo create dcl632/windows-gui-mcp --public --source=. --remote=origin --push
-git tag v0.1.0
-git push origin v0.1.0
-gh release create v0.1.0 dist/* --title "windows-gui-mcp v0.1.0" --notes-file README.md
+git commit -m "Prepare release vX.Y.Z"
+git tag vX.Y.Z
+git push origin main vX.Y.Z
+gh release create vX.Y.Z dist/* --title "windows-gui-mcp vX.Y.Z" --notes-file README.md
 ```
 
 ## PyPI release
 
-Only upload after the GitHub repository, release tag, and CI are public and
+Only publish after the GitHub repository, release tag, and CI are public and
 green.
 
+Preferred path: PyPI Trusted Publishing.
+
+Create a pending publisher in your PyPI account with these exact values:
+
+- PyPI project name: `windows-gui-mcp`
+- Owner: `dcl632`
+- Repository name: `windows-gui-mcp`
+- Workflow filename: `publish.yml`
+- Environment name: `pypi`
+
+Then run the `Publish to PyPI` workflow from GitHub Actions, or publish a new
+GitHub Release. The workflow uses GitHub OIDC and does not need a long-lived
+PyPI API token.
+
+Fallback path: local token upload.
+
 ```bash
-python -m twine upload dist/*
+TWINE_USERNAME=__token__ TWINE_PASSWORD=pypi-... python -m twine upload dist/*
 ```
 
-Use a PyPI API token. Do not commit PyPI credentials or `.pypirc` files.
+Do not commit PyPI credentials or `.pypirc` files.
 
 ## OpenAI Codex for OSS application
 
