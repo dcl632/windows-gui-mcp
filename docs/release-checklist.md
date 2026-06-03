@@ -42,7 +42,8 @@ gh release create vX.Y.Z dist/* --title "windows-gui-mcp vX.Y.Z" --notes-file RE
 Only publish after the GitHub repository, release tag, and CI are public and
 green.
 
-Preferred path: PyPI Trusted Publishing.
+Preferred path: PyPI Trusted Publishing:
+`https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/`
 
 Create a pending publisher in your PyPI account with these exact values:
 
