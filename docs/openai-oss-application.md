@@ -17,8 +17,8 @@ Official links:
 - License: MIT
 - Public release: `https://github.com/dcl632/windows-gui-mcp/releases/tag/v0.1.0`
 - CI: GitHub Actions on Ubuntu and Windows
-- PyPI publishing: prepared through GitHub Actions Trusted Publishing workflow
-- PyPI status: pending Trusted Publisher configuration in the PyPI account
+- PyPI publishing: published through GitHub Actions Trusted Publishing workflow
+- PyPI status: `windows-gui-mcp` version `0.1.0` is available on PyPI
 - Security readiness: GitHub private vulnerability reporting, secret scanning,
   and push protection are enabled
 
@@ -59,9 +59,9 @@ Do not commit these values to the repository:
 - Public GitHub repository exists.
 - Release `v0.1.0` exists.
 - GitHub Actions CI is green.
-- PyPI Trusted Publisher is configured or PyPI API token upload is complete.
+- PyPI Trusted Publisher is configured and the package is published.
 - README includes install, run, examples, and safety rules.
 - CONTRIBUTING, SECURITY, changelog, pull request template, and issue templates exist.
 - GitHub private vulnerability reporting, secret scanning, and push protection are enabled.
 - Repository contains no private host, account, email, or internal workflow details.
-- PyPI package exists or the release notes clearly state when it will be published.
+- PyPI package exists and installs successfully from a clean virtual environment.

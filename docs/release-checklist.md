@@ -1,13 +1,14 @@
 # Release checklist
 
-This project has a public `v0.1.0` GitHub release. Use this checklist for
-future release verification and for the remaining PyPI publication step.
+This project has a public `v0.1.0` GitHub release and PyPI package. Use this
+checklist for future release verification.
 
 ## Current public release
 
 - Repository: `https://github.com/dcl632/windows-gui-mcp`
 - Release: `https://github.com/dcl632/windows-gui-mcp/releases/tag/v0.1.0`
 - Package name: `windows-gui-mcp`
+- PyPI: `https://pypi.org/project/windows-gui-mcp/`
 - License: MIT
 - CI: GitHub Actions on Ubuntu and Windows
 
@@ -45,7 +46,7 @@ green.
 Preferred path: PyPI Trusted Publishing:
 `https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/`
 
-Create a pending publisher in your PyPI account with these exact values:
+For `v0.1.0`, the PyPI Trusted Publisher was created with these exact values:
 
 - PyPI project name: `windows-gui-mcp`
 - Owner: `dcl632`
