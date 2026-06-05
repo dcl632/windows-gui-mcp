@@ -30,20 +30,31 @@ Official links:
 ## Qualification draft
 
 ```text
-windows-gui-mcp is an open-source MCP server that helps AI coding agents operate Windows desktop apps through semantic UI Automation instead of brittle coordinate clicks. It exposes UIA-first tools, verify-after-action workflows, OCR/image fallback as a last resort, and trace-to-script generation so agents can debug and automate Windows-only software safely and repeatably.
+windows-gui-mcp is an MIT-licensed MCP server for AI coding agents that need to operate Windows desktop applications. It targets an underserved part of the agent ecosystem: Windows-only desktop software that does not expose a browser DOM or web API. The project exposes UI Automation-first tools, verify-after-action workflows, OCR/image fallback as a last resort, and trace-to-script generation so agents can inspect live Windows UI, act on stable controls, verify outcomes, and turn successful sessions into reusable pywinauto scripts.
 ```
 
 ## API credits draft
 
 ```text
-Use credits to improve Codex-assisted development, add Windows GUI automation test scenarios, generate and review documentation, triage issues, and evaluate security/readiness of MCP tool behavior across Notepad, Calculator, native dialogs, and common Windows apps.
+Use credits to improve Codex-assisted development of Windows GUI automation scenarios, expand Notepad/Calculator/native dialog demos, review trace-to-script output, triage public issues, improve selector reliability, and evaluate safety of MCP tool behavior around action verification, fallback clicks, trace privacy, and generated replay scripts.
 ```
 
 ## Anything else draft
 
 ```text
-The repository is a new public MIT release with Ubuntu/Windows CI, release artifacts, issue templates, CONTRIBUTING, SECURITY, private vulnerability reporting, and Notepad/Calculator examples. It targets an underserved need for agents: reliable Windows-only desktop automation through MCP with safe fallbacks.
+This is a new public project, so the strongest qualification is ecosystem importance rather than existing star count. The repo is already prepared as a real open-source package: public GitHub repository, MIT license, PyPI package, v0.1.0 GitHub release, Ubuntu/Windows CI, issue templates, CONTRIBUTING, SECURITY, private vulnerability reporting, roadmap, Notepad/Calculator demos, and positioning notes. The goal is to give coding agents a safer MCP layer for Windows GUI automation: UIA-first selectors, explicit post-action verification, fallback discipline, and replayable traces.
 ```
+
+## Ecosystem importance notes
+
+- AI agents have strong tooling for browsers because web pages expose a DOM, but
+  many developer, test, installer, enterprise, and Windows-only workflows still
+  require native desktop automation.
+- `windows-gui-mcp` is focused on that gap rather than general remote desktop
+  control.
+- The project is new and should not claim adoption metrics it does not have.
+  Frame the application around clear scope, public release readiness, safety
+  posture, and why Windows GUI automation matters for coding agents.
 
 ## Private fields to fill in the form only
 
@@ -65,3 +76,4 @@ Do not commit these values to the repository:
 - GitHub private vulnerability reporting, secret scanning, and push protection are enabled.
 - Repository contains no private host, account, email, or internal workflow details.
 - PyPI package exists and installs successfully from a clean virtual environment.
+- Demo, roadmap, outreach drafts, and positioning notes are present.

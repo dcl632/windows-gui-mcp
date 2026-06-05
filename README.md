@@ -1,5 +1,10 @@
 # windows-gui-mcp
 
+[![CI](https://github.com/dcl632/windows-gui-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/dcl632/windows-gui-mcp/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/windows-gui-mcp.svg)](https://pypi.org/project/windows-gui-mcp/)
+[![Release](https://img.shields.io/github/v/release/dcl632/windows-gui-mcp)](https://github.com/dcl632/windows-gui-mcp/releases)
+[![License](https://img.shields.io/github/license/dcl632/windows-gui-mcp)](LICENSE)
+
 Windows GUI Automation MCP server for AI coding agents.
 
 `windows-gui-mcp` helps agents operate Windows desktop applications through
@@ -8,11 +13,28 @@ agent workflows that need to inspect a live Windows UI, act on stable
 identifiers, verify every action, and turn successful sessions into reusable
 scripts.
 
+Install from PyPI:
+
+```powershell
+py -3.12 -m pip install "windows-gui-mcp[windows,ocr]"
+```
+
+Demo and project notes:
+
+- [Notepad and Calculator demo](docs/demo.md)
+- [Example workflow](examples/notepad_calculator.md)
+- [Roadmap](docs/roadmap.md)
+- [Competitive positioning](docs/competitive-positioning.md)
+
 ## Why this exists
 
 AI agents can work reliably with web pages because browsers expose structured
 DOM state. Windows desktop applications are harder: the visible UI is often
 stateful, asynchronous, and easy to break with raw coordinates.
+
+This project targets a gap in the agent ecosystem: reliable control of
+Windows-only desktop software through MCP, with UI Automation as the default
+interface and OCR/image matching treated as explicit fallbacks.
 
 This project exposes a small MCP toolset that keeps the agent in a safer loop:
 
@@ -160,6 +182,9 @@ This is the intended agent loop for a Notepad or Calculator task:
 
 See [examples/notepad_calculator.md](examples/notepad_calculator.md) for a
 longer walkthrough.
+
+For a fuller transcript, expected output, and generated replay script shape, see
+[docs/demo.md](docs/demo.md).
 
 ## Safety rules
 
