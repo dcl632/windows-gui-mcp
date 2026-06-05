@@ -90,6 +90,11 @@ Windows backend ladder
 
 Python 3.12 or newer is required.
 
+macOS and Linux controller machines may ship an older system Python. If
+`python3 --version` is below 3.12, install Python 3.12 or newer before running
+`pip install windows-gui-mcp`. Live GUI automation still needs the MCP server to
+run on the Windows desktop session that owns the target UI.
+
 For normal Windows agent use:
 
 ```powershell
